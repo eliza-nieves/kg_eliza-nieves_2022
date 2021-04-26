@@ -11,7 +11,7 @@ for(i = 0; i < input.length; i++){
 	var w;
 	for(w = 0; w < input[i].length; w++){
 		if(isNaN(parseInt(input[i][w]))){
-			console.log("\nInvalid input. Please ensure all values in array are integers.");
+			process.stdout.write("Invalid input. Please ensure all values in array are integers.");
 			error = 1;
 			break;
 		}
